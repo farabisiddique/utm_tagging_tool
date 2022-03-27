@@ -1,0 +1,14 @@
+
+<h1>UTM Tagging Tool</h1>
+<br>
+<form action = "/showutm/" method = "post">
+	{% csrf_token %}
+	{{form }}
+	<br><br>
+	<input type="submit" value=CreateURL>
+</form>
+{% if final_url %}
+<h2>The URL will be:</h2>
+{{ final_url }}
+{% endif %}
+
