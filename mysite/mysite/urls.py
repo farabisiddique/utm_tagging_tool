@@ -17,11 +17,15 @@ from django.contrib import admin
 from django.urls import path
 from mysite.views import home_view
 from mysite.views import show_utm
+from mysite.views import scrape_linkedin
+from mysite.views import scrape_google
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home_view ),
     path('showutm/', show_utm ),
+    path('scrape/', scrape_linkedin ),
+    path('scrapeg/', scrape_google ),
 
 ]

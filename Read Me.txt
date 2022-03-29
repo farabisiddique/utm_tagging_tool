@@ -1,0 +1,3 @@
+The scrape_linkedin function in views.py is scraping the campaign urls from the client's linked account.(so far)
+Then, from the campaign urls, ad urls will be extracted too.
+Finally, these urls will be added to utm parameters.
